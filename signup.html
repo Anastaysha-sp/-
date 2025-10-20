@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на тренировку</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <!-- Модальное окно подтверждения времени -->
+    <div id="timeConfirmationModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Подтверждение времени</h2>
+            <p class="modal-text">На выбранную дату и время есть свободное место!</p>
+            <div class="modal-buttons">
+                <button id="confirmTime" class="modal-btn primary">Подтвердить</button>
+                <button id="changeTime" class="modal-btn secondary">Изменить время</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно успешной записи -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Запись успешно оформлена!</h2>
+            <p class="modal-text">Мы ждём вас на тренировку в назначенное время.</p>
+            <div class="modal-buttons">
+                <button id="closeSuccess" class="modal-btn primary">ОК</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основная форма записи -->
+    <div class="container">
+        <div class="form-wrapper">
+            <h1 class="form-title">Запись на тренировку</h1>
+            
+            <form id="bookingForm">
+                <div class="form-group">
+                    <h2 class="section-title">Тип тренировки</h2>
+                    <div class="training-types">
+                        <label class="type-option">
+                            <input type="radio" name="trainingType" value="free" required>
+                            <span class="type-btn">Свободное плавание</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="radio" name="trainingType" value="coach">
+                            <span class="type-btn">Занятие с тренером</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="radio" name="trainingType" value="aqua">
+                            <span class="type-btn">Акваэробика</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="radio" name="trainingType" value="baby">
+                            <span class="type-btn">Грудничковое плавание</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Дата тренировки</h2>
+                    <input type="date" id="trainingDate" required min="">
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Время тренировки</h2>
+                    <select id="trainingTime" required>
+                        <option value="">Выберите время</option>
+                        <option value="08:00">08:00 - 09:00</option>
+                        <option value="09:00">09:00 - 10:00</option>
+                        <option value="10:00">10:00 - 11:00</option>
+                        <option value="11:00">11:00 - 12:00</option>
+                        <option value="12:00">12:00 - 13:00</option>
+                        <option value="14:00">14:00 - 15:00</option>
+                        <option value="15:00">15:00 - 16:00</option>
+                        <option value="16:00">16:00 - 17:00</option>
+                        <option value="17:00">17:00 - 18:00</option>
+                        <option value="18:00">18:00 - 19:00</option>
+                        <option value="19:00">19:00 - 20:00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Данные для оплаты</h2>
+                    <div class="payment-fields">
+                        <input type="tel" id="paymentPhone" placeholder="Номер телефона" required>
+                        <input type="text" id="cardNumber" placeholder="Номер карты" required maxlength="19">
+                        <div class="card-details">
+                            <input type="text" id="cardExpiry" placeholder="ММ/ГГ" required maxlength="5">
+                            <input type="text" id="cardCVC" placeholder="CVC" required maxlength="3">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Завершить запись</button>
+                
+                <div class="home-link-container">
+                    <a href="main.html" class="home-link">На главную</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

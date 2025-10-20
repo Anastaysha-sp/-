@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Swim - Услуги и цены</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body class="short-page">
+    <!-- Шапка с эффектом мутного стекла -->
+    <header class="glass-header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="лого.png">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">О нас</a></li>
+                <li><a href="#" class="active">Услуги и цены</a></li>
+                <li><a href="schedule.html">Расписание</a></li>
+                <li><a href="trainers.html">Тренера</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button onclick="window.location.href='registr.html'" class="nav-btn">Зарегистрироваться</button>
+                <button onclick="window.location.href='signup.html'" class="nav-btn">Записаться</button>
+            </div>
+            <div class="nav-social">
+                <span>@Just_Sweem25</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <section class="fullscreen-section gradient-bg">
+            <div class="gradient-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="услуги2.png" class="hero-img">
+                </div>
+                <div class="hero-text">
+                    <h1 class="main-title">JUST SWIM</h1>
+                    <p class="lead-text">Мы предлагаем широкий спектр услуг, чтобы каждый посетитель нашел для себя именно то, что ему нужно. У нас есть всё, чтобы вы могли не только улучшить свою физическую форму, но и получить заряд положительных эмоций и отдохнуть душой!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Слайдер -->
+        <section class="slider">
+        <section class="servicegallery">
+            <h2>Наши услуги</h2>
+            <div class="wrapper">
+            <span class="slide" style="--i: 1">
+                <img src="услуга1.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 2">
+                <img src="услуга2.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 3">
+                <img src="услуга3.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 4">
+                <img src="услуга4.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 5">
+                <img src="услуга5.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 6">
+                <img src="услуга6.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 7">
+                <img src="услуга7.jpg" alt=""/>
+            </span>
+            <span class="slide" style="--i: 8">
+                <img src="услуга8.jpg" alt=""/>
+            </span>
+            </div>
+        </section>
+        </section>
+            
+        <section class="description">    
+            <div class="description-content">
+                <div class="linu">
+                    <img src="линииуслуги.png" alt="Декоративные линии">
+                    <!-- Заголовок размещаем поверх изображения -->
+                    <div class="zagdes">
+                        <h1>Описание</h1>
+                        <h1>услуг</h1>
+                    </div>
+                </div>
+                
+                <div class="container-description">
+                    <div class="service-block aquaaerobics">
+                        <h3>Аквааэробика</h3>
+                        <p>Эффективные и веселые тренировки в воде под музыку.</p>
+                    </div>
+                
+                    <div class="service-block baby-swimming">
+                        <h3>Грудничковое плавание</h3>
+                        <p>Оказывает комплексное воздействие на организм ребенка.</p>
+                    </div>
+                
+                    <div class="service-block sauna-massage">
+                        <h3>Сауна и массаж</h3>
+                        <p>Расслабление и оздоровление после плавания.</p>
+                    </div>
+                
+                    <div class="service-block individual-training">
+                        <h3>Занятия с тренером</h3>
+                        <p>Персональные тренировки для достижения конкретных целей (научиться плавать, улучшить технику, сбросить вес).</p>
+                    </div>
+                
+                    <div class="service-block free-swimming">
+                        <h3>Свободное плавание</h3>
+                        <p>Плавайте в своё удовольствие, когда хотите и как хотите.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pool-pricing">
+            <div class="pool-pricing__toggle">
+                <span>Ежемесячно</span>
+                <label class="pool-pricing__switch">
+                    <input type="checkbox" id="poolBillingToggle">
+                    <span class="pool-pricing__slider"></span>
+                </label>
+                <span>Годовой платеж</span>
+            </div>
+        
+            <div class="pool-pricing__cards">
+                <!-- Разовый визит -->
+                <div class="pool-pricing__card">
+                    <div class="pool-pricing__header">
+                        <h3>Разовый визит</h3>
+                        <div class="pool-pricing__price">
+                            <span class="pool-pricing__monthly">700 ₽</span>
+                            <span class="pool-pricing__yearly hidden">6 500 ₽</span>
+                            <span class="pool-pricing__period">/ визит</span>
+                        </div>
+                    </div>
+                    <ul class="pool-pricing__features">
+                        <li>✓ 2 часа плавания</li>
+                        <li>✓ Доступ ко всем дорожкам</li>
+                        <li>✓ Душ и раздевалка</li>
+                        <li>✓ Полотенце</li>
+                        <li>✘ Тренер</li>
+                        <li>✘ Сауна</li>
+                    </ul>
+                    <button class="pool-pricing__btn">Выбрать тариф</button>
+                </div>
+        
+                <!-- Стандартный -->
+                <div class="pool-pricing__card pool-pricing__card--popular">
+                    <div class="pool-pricing__badge">Популярный</div>
+                    <div class="pool-pricing__header">
+                        <h3>Стандартный</h3>
+                        <div class="pool-pricing__price">
+                            <span class="pool-pricing__monthly">2 500 ₽</span>
+                            <span class="pool-pricing__yearly hidden">25 000 ₽</span>
+                            <span class="pool-pricing__period">/ месяц</span>
+                        </div>
+                        <div class="pool-pricing__savings">Экономия 15%</div>
+                    </div>
+                    <ul class="pool-pricing__features">
+                        <li>✓ 8 посещений в месяц</li>
+                        <li>✓ Все дорожки + медленная</li>
+                        <li>✓ Душ и раздевалка</li>
+                        <li>✓ 2 полотенца</li>
+                        <li>✓ 1 занятие с тренером</li>
+                        <li>✓ Сауна 30 мин/мес</li>
+                    </ul>
+                    <button class="pool-pricing__btn">Выбрать тариф</button>
+                </div>
+        
+                <!-- Премиум -->
+                <div class="pool-pricing__card">
+                    <div class="pool-pricing__header">
+                        <h3>Премиум</h3>
+                        <div class="pool-pricing__price">
+                            <span class="pool-pricing__monthly">4 900 ₽</span>
+                            <span class="pool-pricing__yearly hidden">49 000 ₽</span>
+                            <span class="pool-pricing__period">/ месяц</span>
+                        </div>
+                        <div class="pool-pricing__savings">Экономия 20%</div>
+                    </div>
+                    <ul class="pool-pricing__features">
+                        <li>✓ Неограниченное посещение</li>
+                        <li>✓ Приоритетные дорожки</li>
+                        <li>✓ VIP раздевалка</li>
+                        <li>✓ Неограниченно полотенец</li>
+                        <li>✓ 4 занятия с тренером</li>
+                        <li>✓ Сауна 2 часа/мес</li>
+                    </ul>
+                    <button class="pool-pricing__btn">Выбрать тариф</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Подвал с эффектом мутного стекла -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li>Общая информация</li>
+                    <li>Преимущества</li>
+                    <li>Меню</li>
+                    <li>Мерч</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>OUR CONTACTS</h4>
+                <p>+7 (915) 777-23-28</p>
+                <p>@Just_Sweem25</p>
+                <p>Москва, ул. Пушкина 36</p>
+            </div>
+            <div class="footer-section">
+                <h4>OUR SOCIAL NETWORKS</h4>
+                <div class="social-buttons">
+                    <a href="#" class="social-btn">
+                        <i class="bi bi-google-play"></i>
+                        Google Play
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i class="bi bi-apple"></i>
+                        App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

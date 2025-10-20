@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="registr.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <div class="container">
+        <div class="form-wrapper">
+            <h1 class="form-title">Регистрация</h1>
+            
+            <form id="registrationForm">
+                <div class="form-group">
+                    <h2 class="section-title">ФИО</h2>
+                    <input type="text" id="fullName" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Выберите способы связи с вами</h2>
+                    <div class="contact-methods">
+                        <label class="method-option">
+                            <input type="radio" name="contactMethod" value="phone" checked>
+                            <span class="method-btn">Телефон</span>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="contactMethod" value="telegram">
+                            <span class="method-btn">Telegram</span>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="contactMethod" value="whatsapp">
+                            <span class="method-btn">WhatsApp</span>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="contactMethod" value="vk">
+                            <span class="method-btn">VK</span>
+                        </label>
+                    </div>
+                    
+                    <div class="contact-inputs">
+                        <div class="phone-input active">
+                            <input type="tel" id="phone" placeholder="+7 (999) 999-99-99">
+                        </div>
+                        <div class="telegram-input">
+                            <input type="text" id="telegram" placeholder="@username">
+                        </div>
+                        <div class="whatsapp-input">
+                            <input type="tel" id="whatsapp" placeholder="+7 (999) 999-99-99">
+                        </div>
+                        <div class="vk-input">
+                            <input type="text" id="vk" placeholder="vk.com/username">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Адрес электронной почты</h2>
+                    <input type="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <h2 class="section-title">Место проживания</h2>
+                    <input type="text" id="address" placeholder="г. Владимир, ул. Университетская, д. 4" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                
+                <div class="home-link-container">
+                    <a href="main.html" class="home-link">На главную</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
