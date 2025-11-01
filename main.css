@@ -303,6 +303,35 @@ body {
     opacity: 0.9;
 }
 
+/* Добавьте эти стили к существующим */
+
+.glass-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(62, 62, 62, 0.251);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Преимущества */
 .advantages-section {
     padding: 6rem 2rem;
@@ -637,7 +666,7 @@ body {
 
 .linii {
     width: 100vw;
-    height: 300px;
+    height: 320px;
     overflow: hidden;
     position: relative; /* Добавьте это */
 }

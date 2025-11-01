@@ -140,8 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new FullscreenSlider();
 });
 
-
-
 document.getElementById('poolBillingToggle').addEventListener('change', function() {
     const monthlyPrices = document.querySelectorAll('.pool-pricing__monthly');
     const yearlyPrices = document.querySelectorAll('.pool-pricing__yearly');
@@ -149,8 +147,6 @@ document.getElementById('poolBillingToggle').addEventListener('change', function
     monthlyPrices.forEach(price => price.classList.toggle('hidden'));
     yearlyPrices.forEach(price => price.classList.toggle('hidden'));
 });
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('registrationForm');
@@ -313,10 +309,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инициализация - активируем поле телефона по умолчанию
     document.querySelector('.phone-input').classList.add('active');
 });
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // Установка минимальной даты (сегодня)
